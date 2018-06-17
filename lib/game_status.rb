@@ -43,3 +43,5 @@ end
 end
 
 def full?(board)
+
+end
