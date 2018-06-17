@@ -20,6 +20,7 @@ def won?(board)
 
   if board == " "
     false
+  else
   end
 
 else
