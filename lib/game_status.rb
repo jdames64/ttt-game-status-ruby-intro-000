@@ -18,9 +18,10 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 
-  WIN_COMBINATIONS.detect do |win_combination|
-      win_combination.all?{|win_index| board[win_index] == "X"} || win_combination.all?{|win_index| board[win_index] == "O"}
+  WIN_COMBINATIONS.detect do |win_array|
+      win_array.all?{|win_position| board[win_position] == "X"} || win_array.all?{|win_position| board[win_position] == "O"}
     end
+end
 
 def full?(board)
  if board.find{|i| i == " "}
