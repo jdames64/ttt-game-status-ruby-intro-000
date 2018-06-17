@@ -18,9 +18,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 
- if
-  WIN_COMBINATIONS.all? do |index|
-    index == " "
+  if board = " "
+    false
   end
 
 else
@@ -38,8 +37,6 @@ else
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       return win_combination
     elsif position_1 == "X" && position_2 == "O" && position_3 == "O"
-      return false
-    elsif position_1 == " " && position_2 == " " && position_3 == " "
       return false
     end
   end
