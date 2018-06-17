@@ -35,7 +35,7 @@ def won?(board)
     elsif position_1 == "X" && position_2 == "O" && position_3 == "O"
       return false
 
-  elsif board == " "
+  else
     false
     end
   end
