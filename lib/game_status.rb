@@ -42,6 +42,11 @@ end
 end
 
 def full?(board)
-
+ if board.find{|i| i == " "}
+   true
+ else
+   false
+ end
+   
 
 end
