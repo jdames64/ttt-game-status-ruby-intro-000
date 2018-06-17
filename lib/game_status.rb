@@ -39,6 +39,8 @@ else
       return win_combination
     elsif position_1 == "X" && position_2 == "O" && position_3 == "O"
       return false
+    elsif position_1 == "" && position_2 == "" && position_3 == ""
+      return false
     end
   end
 end
