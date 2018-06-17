@@ -34,8 +34,7 @@ def won?(board)
       return win_combination
     elsif position_1 == "X" && position_2 == "O" && position_3 == "O"
       return false
-
-  else
+    else
     false
     end
   end
@@ -44,6 +43,5 @@ end
 
 def full?(board)
 
-board
 
 end
