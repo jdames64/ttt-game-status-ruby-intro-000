@@ -18,10 +18,9 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 
-  if board == "" || " " || nil
-    false
-
-  end
+    if position_taken?(board, 0..8) == false
+      false
+    end
 
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
